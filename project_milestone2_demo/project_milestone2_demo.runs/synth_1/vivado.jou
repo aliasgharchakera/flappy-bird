@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 26 12:42:14 2021
+# Process ID: 9616
+# Current directory: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/project_milestone2_demo/project_milestone2_demo.runs/synth_1
+# Command line: vivado.exe -log topLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topLevel.tcl
+# Log file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/project_milestone2_demo/project_milestone2_demo.runs/synth_1/topLevel.vds
+# Journal file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/project_milestone2_demo/project_milestone2_demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topLevel.tcl -notrace

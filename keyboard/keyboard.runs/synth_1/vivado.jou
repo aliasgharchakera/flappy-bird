@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 26 16:20:09 2021
+# Process ID: 1112
+# Current directory: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/keyboard/keyboard.runs/synth_1
+# Command line: vivado.exe -log Keyboard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Keyboard.tcl
+# Log file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/keyboard/keyboard.runs/synth_1/Keyboard.vds
+# Journal file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/keyboard/keyboard.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Keyboard.tcl -notrace
