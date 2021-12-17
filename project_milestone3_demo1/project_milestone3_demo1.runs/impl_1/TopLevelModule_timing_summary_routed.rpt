@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Dec 17 06:00:26 2021
+| Date         : Fri Dec 17 20:10:09 2021
 | Host         : ALI-PC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file TopLevelModule_timing_summary_routed.rpt -pb TopLevelModule_timing_summary_routed.pb -rpx TopLevelModule_timing_summary_routed.rpx -warn_on_violation
 | Design       : TopLevelModule

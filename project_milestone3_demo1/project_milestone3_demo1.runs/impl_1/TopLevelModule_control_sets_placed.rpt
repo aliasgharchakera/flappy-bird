@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Dec 17 05:58:45 2021
+| Date         : Fri Dec 17 20:07:31 2021
 | Host         : ALI-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopLevelModule_control_sets_placed.rpt
 | Design       : TopLevelModule
@@ -73,19 +73,19 @@ Table of Contents
 +----------------+---------------------+---------------------------+------------------+----------------+--------------+
 |  Clock Signal  |    Enable Signal    |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------------+---------------------------+------------------+----------------+--------------+
-|  clk_d_BUFG    | h/E[0]              |                           |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | kb/TRIGGER          |                           |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | kb/COUNT            | kb/COUNT[3]_i_1_n_0       |                1 |              4 |         4.00 |
+|  clk_d_BUFG    | h/E[0]              |                           |                1 |              1 |         1.00 |
 |  c/red0        |                     |                           |                3 |              4 |         1.33 |
 |  c/red0        |                     | pixel/red017_out          |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | kb/COUNT            | kb/COUNT[3]_i_1_n_0       |                1 |              4 |         4.00 |
 |  clk_d_BUFG    |                     |                           |                3 |              5 |         1.67 |
 |  clk_IBUF_BUFG |                     | kb/CODEWORD[7]_i_1_n_0    |                2 |              8 |         4.00 |
 |  clk_IBUF_BUFG |                     | kb/DOWNCOUNTER[7]_i_1_n_0 |                2 |              8 |         4.00 |
-|  clk_d_BUFG    | mov/counter0        | mov/pipe3_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
-|  clk_d_BUFG    | mov/counter0        | mov/pipe2_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
-|  clk_d_BUFG    | mov/counter0        | mov/pipe1_x[9]_i_1_n_0    |                3 |              9 |         3.00 |
-|  clk_d_BUFG    | h/E[0]              | v/v_count[9]_i_1_n_0      |                4 |              9 |         2.25 |
 |  clk_IBUF_BUFG |                     |                           |                6 |              9 |         1.50 |
+|  clk_d_BUFG    | h/E[0]              | v/v_count[9]_i_1_n_0      |                4 |              9 |         2.25 |
+|  clk_d_BUFG    | mov/counter0        | mov/pipe1_x[9]_i_1_n_0    |                3 |              9 |         3.00 |
+|  clk_d_BUFG    | mov/counter0        | mov/pipe2_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
+|  clk_d_BUFG    | mov/counter0        | mov/pipe3_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
 |  clk_d_BUFG    |                     | h/clear                   |                3 |             10 |         3.33 |
 |  clk_IBUF_BUFG | kb/read5_out        |                           |                3 |             11 |         3.67 |
 |  clk_IBUF_BUFG | kb/TRIGGER          | kb/count_reading          |                3 |             12 |         4.00 |
