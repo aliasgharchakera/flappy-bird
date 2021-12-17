@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/keyboard/keyboard.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/keyboard/keyboard.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="630c6d05b2084c56acd58df03a3f31d0"/>
@@ -66,14 +66,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../keyboard.v">
+      <File Path="$PPRDIR/../../keyboard.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Multiplayer-Snake-Game-Verilog-main/Multiplayer-Snake-Game-Verilog-main/main/KB_input.sv">
+      <File Path="$PPRDIR/../../Multiplayer-Snake-Game-Verilog-main/Multiplayer-Snake-Game-Verilog-main/main/KB_input.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

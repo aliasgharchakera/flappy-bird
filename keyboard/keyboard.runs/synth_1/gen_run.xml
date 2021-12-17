@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637926160">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637988205">
   <File Type="PA-TCL" Name="Keyboard.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Keyboard_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Keyboard_reports.tcl"/>
   <File Type="RDS-RDS" Name="Keyboard.vds"/>
   <File Type="RDS-UTIL" Name="Keyboard_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Keyboard_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Keyboard.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Keyboard_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Keyboard_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../keyboard.v">
+    <File Path="$PPRDIR/../../keyboard.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Multiplayer-Snake-Game-Verilog-main/Multiplayer-Snake-Game-Verilog-main/main/KB_input.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -21,10 +21,11 @@ set_property IOSTANDARD LVCMOS33 [get_ports {LED[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED[0]}]
 
-set_property PACKAGE_PIN U16 [get_ports Jump]
+set_property PACKAGE_PIN L1 [get_ports Jump]
 set_property IOSTANDARD LVCMOS33 [get_ports Jump]
 
 set_property IOSTANDARD LVCMOS33 [get_ports Reset]
 set_property PACKAGE_PIN E19 [get_ports Reset]
 set_property SLEW SLOW [get_ports Jump]
 set_property SLEW SLOW [get_ports Reset]
+

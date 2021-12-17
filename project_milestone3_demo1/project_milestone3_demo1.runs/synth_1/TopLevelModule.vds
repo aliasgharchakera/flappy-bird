@@ -1,0 +1,312 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec 17 05:09:23 2021
+# Process ID: 3832
+# Current directory: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.runs/synth_1
+# Command line: vivado.exe -log TopLevelModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevelModule.tcl
+# Log file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.runs/synth_1/TopLevelModule.vds
+# Journal file: C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevelModule.tcl -notrace
+Command: synth_design -top TopLevelModule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5388
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1027.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/TopLevelModule.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/clk_div.v:2]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/clk_div.v:2]
+INFO: [Synth 8-6157] synthesizing module 'h_counter' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/h_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'h_counter' (2#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/h_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'v_counter' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/v_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'v_counter' (3#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/v_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/vga_sync.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/vga_sync.v:3]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/keyboard.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (5#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/keyboard.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mover' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:1]
+	Parameter UP bound to: 3'b010 
+	Parameter DOWN bound to: 3'b100 
+	Parameter START bound to: 3'b000 
+	Parameter RESET bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:43]
+WARNING: [Synth 8-6090] variable 'bird_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:121]
+WARNING: [Synth 8-6090] variable 'pipe1_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:123]
+WARNING: [Synth 8-6090] variable 'pipe2_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:126]
+WARNING: [Synth 8-6090] variable 'pipe3_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'mover' (6#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/mover.v:1]
+INFO: [Synth 8-6157] synthesizing module 'score' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/score.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'score' (7#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/score.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/pixel_gen.v:2]
+	Parameter UP bound to: 3'b010 
+	Parameter DOWN bound to: 3'b100 
+	Parameter START bound to: 3'b000 
+	Parameter RESET bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (8#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/pixel_gen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (9#1) [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/finalEDA/TopLevelModule.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1027.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1027.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1027.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1027.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc]
+WARNING: [Vivado 12-507] No nets matched 'kb/red[3]_i_19_n_0'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'mov/counter[0]_carry_i_1'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.srcs/constrs_1/new/demo1Cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevelModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevelModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1030.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1030.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mover'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                               00 |                              000
+                      UP |                               01 |                              010
+                    DOWN |                               10 |                              100
+                   RESET |                               11 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mover'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 12    
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 17    
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 5     
+	  16 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 17    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1030.789 ; gain = 2.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:28 . Memory (MB): peak = 1051.211 ; gain = 23.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   148|
+|3     |LUT1   |    24|
+|4     |LUT2   |   183|
+|5     |LUT3   |   106|
+|6     |LUT4   |   228|
+|7     |LUT5   |   112|
+|8     |LUT6   |   161|
+|9     |FDCE   |    62|
+|10    |FDRE   |   138|
+|11    |FDSE   |     6|
+|12    |IBUF   |     4|
+|13    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 1055.977 ; gain = 25.188
+Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:47 . Memory (MB): peak = 1055.977 ; gain = 28.109
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1068.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1068.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 12 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:07 . Memory (MB): peak = 1068.059 ; gain = 40.191
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alias/OneDrive - Habib University/Semester 3/DLD/Project/DLD-Project/project_milestone3_demo1/project_milestone3_demo1.runs/synth_1/TopLevelModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopLevelModule_utilization_synth.rpt -pb TopLevelModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 17 05:11:45 2021...
