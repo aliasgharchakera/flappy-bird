@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Dec 17 05:13:25 2021
+| Date         : Fri Dec 17 05:58:45 2021
 | Host         : ALI-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopLevelModule_control_sets_placed.rpt
 | Design       : TopLevelModule
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |           13 |
+| No           | No                    | No                     |              18 |           12 |
 | No           | No                    | Yes                    |              47 |           12 |
-| No           | Yes                   | No                     |              53 |           16 |
+| No           | Yes                   | No                     |              53 |           15 |
 | Yes          | No                    | No                     |              27 |           17 |
 | Yes          | No                    | Yes                    |              15 |            4 |
 | Yes          | Yes                   | No                     |              52 |           19 |
@@ -75,21 +75,21 @@ Table of Contents
 +----------------+---------------------+---------------------------+------------------+----------------+--------------+
 |  clk_d_BUFG    | h/E[0]              |                           |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | kb/TRIGGER          |                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | kb/COUNT            | kb/COUNT[3]_i_1_n_0       |                1 |              4 |         4.00 |
 |  c/red0        |                     |                           |                3 |              4 |         1.33 |
 |  c/red0        |                     | pixel/red017_out          |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | kb/COUNT            | kb/COUNT[3]_i_1_n_0       |                1 |              4 |         4.00 |
 |  clk_d_BUFG    |                     |                           |                3 |              5 |         1.67 |
 |  clk_IBUF_BUFG |                     | kb/CODEWORD[7]_i_1_n_0    |                2 |              8 |         4.00 |
 |  clk_IBUF_BUFG |                     | kb/DOWNCOUNTER[7]_i_1_n_0 |                2 |              8 |         4.00 |
-|  clk_d_BUFG    | mov/counter0        | mov/pipe1_x[9]_i_1_n_0    |                3 |              9 |         3.00 |
-|  clk_d_BUFG    | mov/counter0        | mov/pipe2_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
 |  clk_d_BUFG    | mov/counter0        | mov/pipe3_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
+|  clk_d_BUFG    | mov/counter0        | mov/pipe2_x[9]_i_1_n_0    |                4 |              9 |         2.25 |
+|  clk_d_BUFG    | mov/counter0        | mov/pipe1_x[9]_i_1_n_0    |                3 |              9 |         3.00 |
 |  clk_d_BUFG    | h/E[0]              | v/v_count[9]_i_1_n_0      |                4 |              9 |         2.25 |
-|  clk_IBUF_BUFG |                     |                           |                7 |              9 |         1.29 |
-|  clk_d_BUFG    |                     | h/clear                   |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG | kb/read5_out        |                           |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG |                     |                           |                6 |              9 |         1.50 |
+|  clk_d_BUFG    |                     | h/clear                   |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | kb/read5_out        |                           |                3 |             11 |         3.67 |
 |  clk_IBUF_BUFG | kb/TRIGGER          | kb/count_reading          |                3 |             12 |         4.00 |
-|  clk_d_BUFG    | mov/counter0        |                           |               11 |             14 |         1.27 |
+|  clk_d_BUFG    | mov/counter0        |                           |               12 |             14 |         1.17 |
 |  clk_IBUF_BUFG | s/one_second_enable | mov/reset2                |                4 |             15 |         3.75 |
 |  clk_d_BUFG    |                     | mov/counter0              |                6 |             23 |         3.83 |
 |  clk_IBUF_BUFG |                     | mov/reset2                |               12 |             47 |         3.92 |
