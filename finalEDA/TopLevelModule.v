@@ -28,4 +28,5 @@ module TopLevelModule(
   mover mov(clk_d, dir, reset2, bird_x, bird_y, pipe1_x, pipe1_y, pipe2_x, pipe2_y, pipe3_x, pipe3_y);
   score s(clk, reset2, an_act, LED);
   pixel_gen pixel(x_loc, y_loc, clk_d, start, video_on, bird_x, bird_y, pipe1_x, pipe1_y, pipe2_x, pipe2_y, pipe3_x, pipe3_y, red, blue, green); //here we call each module and connect it with each other using our pre defined wires and then eventually take the output out.
+//  pixel_gen3 pixel2(x_loc, y_loc, clk_d, start, video_on, bird_x, bird_y, pipe1_x, pipe1_y, pipe2_x, pipe2_y, pipe3_x, pipe3_y, red, blue, green);
 endmodule
